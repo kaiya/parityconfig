@@ -18,7 +18,7 @@ interface = "127.0.0.1"
 [account]
 password = ["node.pwds"]
 [mining]
-engine_signer = "0xac9e9e59f1fa70bab2ada60f215cedc200acd91c"
+#engine_signer = "0xac9e9e59f1fa70bab2ada60f215cedc200acd91c"
 usd_per_tx="0"
 reseal_on_txs = "none"
 tx_gas_limit = "9000000"
