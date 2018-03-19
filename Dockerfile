@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 LABEL maintainer="Kaiya Xiong"
 RUN mkdir /parity
 WORKDIR /parity
