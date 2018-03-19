@@ -5,7 +5,7 @@ engine_signer=$(parity account new --chain genesis.json --keys-path ./data/keys 
 
 echo "the signer address is :$engine_signer"
 
-tempstr="/\[mining\]/a\engine_singer=\"$engine_signer\""
+tempstr="/\[mining\]/a\engine_signer=\"$engine_signer\""
 ## append the engine_signer string in node.toml
 sed -i $tempstr node.toml
  ## append the validator string and  accounts in genesis.json
