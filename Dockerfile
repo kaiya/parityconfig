@@ -4,9 +4,9 @@ RUN mkdir /parity
 WORKDIR /parity
 RUN apt-get -qq update
 RUN apt-get -qq install -y wget git
-RUN wget http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-unknown-linux-gnu/parity_1.8.11_ubuntu_amd64.deb \
-    && dpkg -i parity_1.8.11_ubuntu_amd64.deb 
-RUN rm parity_1.8.11_ubuntu_amd64.deb && cd .. &&  git clone https://github.com/KYawn/parityconfig.git parity 
+RUN wget http://d1h4xl4cr1h0mo.cloudfront.net/v1.9.5/x86_64-unknown-linux-gnu/parity_1.9.5_ubuntu_amd64.deb \
+    && dpkg -i parity_1.9.5_ubuntu_amd64.deb 
+RUN rm parity_1.9.5_ubuntu_amd64.deb && cd .. &&  git clone https://github.com/KYawn/parityconfig.git parity 
 RUN bash run.sh
 RUN parity --config node.toml
 
