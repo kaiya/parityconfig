@@ -6,19 +6,24 @@ port = 30300
 id = 13337
 reserved_only = true
 reserved_peers = "./myPrivateNetwork.txt"
+nat = "extip:YOUR External IP Address"
+discovery = true
+allow_ips = "all"
 [rpc]
 port = 8545
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+interface = "0.0.0.0"
+hosts = ["all"]
 [ui]
 port = 8180
 interface = "127.0.0.1"
 [websockets]
 port = 8450
-interface = "127.0.0.1"
+interface = "0.0.0.0"
 [account]
 password = ["node.pwds"]
 [mining]
-#engine_signer = "0xac9e9e59f1fa70bab2ada60f215cedc200acd91c"
+engine_signer = "0x24a34f28a2bf1e28fa0eaa30b3c3769d25cfa0a0"
 usd_per_tx="0"
 reseal_on_txs = "none"
 tx_gas_limit = "9000000"
@@ -26,5 +31,3 @@ tx_queue_size=10000
 gas_floor_target="6700000"
 gas_cap="9000000"
 tx_queue_mem_limit=4
-[dapps]
-interface = "127.0.0.1"
